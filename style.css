@@ -28,6 +28,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transition: opacity 0.1s ease-out;
+    animation: animate 0.9s ease-out infinite alternate;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.09);
+    }
 }
 
 .container .notify.counter::before {
